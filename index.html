@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="game-wrapper">
+            <div class="furniture"></div>
+            <div class="student" id="student"></div>
+            <div class="bottom-menu">
+                <div class="users-list-container">
+                    <button class="btn-style-reset users-list-prev" id="users-list-prev"></button>
+                    <div class="users-list">
+                        <div class="user-items" id="users-list">
+                            <div class="users-list-item">
+                                <button class="btn-style-reset users-list-item-add-btn"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-style-reset users-list-next" id="users-list-next"></button>
+                </div>
+                <button id="chat-btn" class="btn-style-reset chat-btn"></button>
+                <button id="university-btn" class="btn-style-reset university-btn"></button>
+                <button id="mail-btn" class="btn-style-reset mail-btn"></button>
+                <button id="rating-btn" class="btn-style-reset rating-btn"></button>
+            </div>
+            <div class="modal" id="modal-top-rating">
+                <div class="modal-background" id="modal-background"></div>
+                <div class="modal-content">
+                    <button id="modal-close-btn" class="btn-style-reset modal-close-btn"></button>
+                    <div class="modal-rating-list" id="modal-rating-list"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

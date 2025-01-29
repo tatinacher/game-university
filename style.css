@@ -1,0 +1,311 @@
+body {
+  font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.game-wrapper {
+  width: 980px;
+  height: 630px;
+  background-color: #000;
+  background-image: url("./assets/Layer\ 64.png");
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-style-reset {
+  border: 0;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.furniture {
+  width: 980px;
+  height: 605px;
+  background-image: url("./assets/path.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+.university-btn {
+  width: 202px;
+  height: 63px;
+  background-image: url("./assets/кнопка\ В\ универ.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+.rating-btn {
+  width: 64px;
+  height: 60px;
+  background-image: url("./assets/иконка.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.mail-btn {
+  width: 64px;
+  height: 60px;
+  background-image: url("./assets/иконкапочта.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+.chat-btn {
+  width: 64px;
+  height: 60px;
+  background-image: url("./assets/Чат.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.users-list-container {
+  width: 536px;
+  height: 63px;
+  background-image: url("./assets/Блок\ друзья.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.users-list {
+  max-width: 472px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  flex-shrink: 0;
+  overflow: scroll;
+  height: 55px;
+  align-items: center;
+}
+
+.user-items {
+  max-width: 472px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  flex-shrink: 0;
+  height: 55px;
+  align-items: center;
+}
+
+.users-list::-webkit-scrollbar {
+  display: none;
+}
+
+.users-list-prev {
+  width: 14px;
+  height: 27px;
+  background-image: url("./assets/стрелочка.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  transform: rotate(180deg);
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.users-list-item {
+  min-width: 50px;
+  height: 51px;
+  background-image: url("./assets/иконка\ copy\ 7.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  position: relative;
+}
+
+.users-list-item:first-child,
+.users-list-item:nth-child(2),
+.users-list-item:nth-child(3) {
+  background-image: url("./assets/Group\ 1.png");
+}
+
+.users-list-item-add-btn {
+  min-width: 34px;
+  height: 35px;
+  background-image: url("./assets/плюсик.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  position: absolute;
+  top: -10px;
+  z-index: 2;
+  right: -10px;
+}
+
+.users-list-next {
+  width: 14px;
+  height: 27px;
+  background-image: url("./assets/стрелочка.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.text {
+  color: #fff;
+}
+
+.student {
+  width: 21px;
+  height: 69px;
+  background-image: url("./assets/student.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  position: absolute;
+  top: 437px;
+  left: 433px;
+}
+
+.bottom-menu {
+  position: absolute;
+  left: 0;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.modal {
+  position: absolute;
+  top: -630px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 980px;
+  height: 630px;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-background {
+  width: 980px;
+  height: 630px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("./assets/Layer\ 353.png");
+}
+
+.modal-content {
+  position: absolute;
+  top: 82px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 523px;
+  height: 466px;
+  background-image: url("./assets/bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+.modal-rating-list {
+  position: absolute;
+  top: 173px;
+  left: 60px;
+  width: 403px;
+  height: 230px;
+  overflow: scroll;
+  color: #fff;
+}
+
+.modal-rating-list::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 27px;
+  right: 30px;
+  background-image: url("./assets/Layer\ 389.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  width: 26px;
+  height: 26px;
+}
+
+.rating-background {
+  background-image: url("./assets/Layer\ 405.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  width: 403px;
+  height: 27px;
+  margin-bottom: 6px;
+  display: flex;
+}
+
+.rating-position {
+  width: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating-name {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  width: 230px;
+}
+
+.rating-image {
+  width: 30px;
+  height: 29px;
+}
+
+.rating-score {
+  display: flex;
+  align-items: center;
+}
+
+.hide-animation {
+  animation: animalfade 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.show-animation {
+  animation: animalshow 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animalfade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes animalshow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
